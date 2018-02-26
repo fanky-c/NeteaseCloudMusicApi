@@ -2,10 +2,6 @@ const express = require('express')
 const http = require('http')
 const app = express()
 
-const {createWebAPIRequest} = require('./util/util');
-
-
-console.log(createWebAPIRequest);
 
 // 跨域设置
 app.all('*', function (req, res, next) {
